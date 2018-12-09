@@ -44,7 +44,7 @@ which takes the following options:
     <td>Radiation density, Ω<sub>r</sub></td>
   </tr>
   <tr>
-    <td>Tcmb = 2.7255</td>
+    <td>Tcmb = 2.725820831</td>
     <td>CMB temperature (K), used to compute Ω<sub>γ</sub></td>
   </tr>
   <tr>
