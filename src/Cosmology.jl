@@ -104,7 +104,7 @@ function cosmology(;h=0.69,
                    OmegaK=0,
                    OmegaM=0.29,
                    OmegaR=nothing,
-                   Tcmb=2.7255,
+                   Tcmb=2.725820831,
                    w0=-1,
                    wa=0)
 
