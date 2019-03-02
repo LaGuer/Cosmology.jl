@@ -4,6 +4,7 @@ Cosmology calculator for Julia
 [![Coverage Status](http://img.shields.io/coveralls/JuliaAstro/Cosmology.jl.svg?style=flat-square)](https://coveralls.io/r/JuliaAstro/Cosmology.jl?branch=master)
 [![Build status](https://ci.appveyor.com/api/projects/status/8w554f36u0aj8vu5/branch/master?svg=true)](https://ci.appveyor.com/project/LaGuer/cosmology-jl/branch/master)
 [![codecov](https://codecov.io/gh/LaGuer/Cosmology.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/LaGuer/Cosmology.jl)
+[![Travis](https://travis-ci.org/LaGuer/Cosmology.jl.svg?branch=master)](https://travis-ci.org/LaGuer/Cosmology.jl)
 
 Installation
 ------------
