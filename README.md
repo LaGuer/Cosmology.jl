@@ -27,7 +27,7 @@ which takes the following options:
 
 <table>
   <tr>
-    <td>h = 0.69</td>
+    <td>h = 0.7</td>
     <td>Dimensionless Hubble constant</td>
   </tr>
   <tr>
