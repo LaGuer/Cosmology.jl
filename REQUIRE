@@ -1,3 +1,4 @@
 julia 0.7
 QuadGK 0.1.1
 Unitful
+UnitfulAstro
