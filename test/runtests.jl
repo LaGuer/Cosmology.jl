@@ -94,7 +94,7 @@ end
 end
 
 @testset "Utilities" begin
-    c = cosmology(h = 0.7)
+    c = cosmology(h = 0.707)
     @test hubble_time(c, 0) ≈ Cosmology.hubble_time0(c)
     @test hubble_dist(c, 0) ≈ Cosmology.hubble_dist0(c)
     @test H(c, 0) ≈ 70.7u"km/s/Mpc"
