@@ -102,10 +102,10 @@ function a2E(c::Union{FlatWCDM,ClosedWCDM,OpenWCDM}, a)
     sqrt(c.Ω_r + (c.Ω_m + c.Ω_k*a)*a + c.Ω_Λ*ade)
 end
 
-function cosmology(;h=0.7,
+function cosmology(;h=0.7079,
                    Neff=3.04,
                    OmegaK=0,
-                   OmegaM=0.29,
+                   OmegaM=0.3,
                    OmegaR=nothing,
                    Tcmb=2.725820831,
                    w0=-1,
