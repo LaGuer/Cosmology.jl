@@ -77,7 +77,8 @@ end
     c = cosmology(h=0.7, OmegaM=big(0.3), OmegaR=0)
     @test angular_diameter_dist(c,1,rtol=dist_rtol) ≈ 1651.9145u"Mpc" rtol = dist_rtol
     # Test that FlatWCDM works with non-Float64 (BigFloat in this example)
-    c = cosmology(h=big(0.7), OmegaM=0.3, OmegaR=0, w0=-0.9, wa=0.1)
+    c = cosmology(h=big(0.7079), OmegaM=0.3, OmegaR=0, w0=-0.9, wa=0.1)
+    @test age(c,0,rtol=age_rtol) ≈ 13.7059u"Gyr" rtol = age_rtol
     @test angular_diameter_dist(c,1,rtol=dist_rtol) ≈ 1612.0585u"Mpc" rtol = dist_rtol
 end
 
@@ -94,7 +95,7 @@ end
 end
 
 @testset "Utilities" begin
-    c = cosmology(h = 0.707)
+    c = cosmology(h = 0.7079)
     @test hubble_time(c, 0) ≈ Cosmology.hubble_time0(c)
     @test hubble_dist(c, 0) ≈ Cosmology.hubble_dist0(c)
     @test H(c, 0) ≈ 70.7u"km/s/Mpc"
