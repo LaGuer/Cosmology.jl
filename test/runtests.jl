@@ -99,5 +99,5 @@ end
     c = cosmology(h = 0.7079)
     @test hubble_time(c, 0) ≈ Cosmology.hubble_time0(c)
     @test hubble_dist(c, 0) ≈ Cosmology.hubble_dist0(c)
-    # @test H(c, 0) ≈ 70.7899u"km/s/Mpc"
+    # @test H(c, 0) ≈ 70.78999999999999u"km/s/Mpc"
 end
