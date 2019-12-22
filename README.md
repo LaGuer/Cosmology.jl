@@ -66,14 +66,14 @@ which takes the following options:
 ```jlcon
 julia> using Cosmology
 
-julia> c = cosmology()
-FlatLCDM(0.69,0.7099122024007928,0.29,8.779759920715362e-5)
+julia> C = cosmology()
+Cosmology.FlatLCDM{Float64}(0.7079, 0.6999165470916852, 0.3, 8.345290831484895e-5)
 
-julia> c = cosmology(OmegaK=0.1)
-OpenLCDM(0.69,0.1,0.6099122024007929,0.29,8.779759920715362e-5)
+julia> C = cosmology(OmegaK=0.1)
+Cosmology.OpenLCDM{Float64}(0.7079, 0.1, 0.5999165470916853, 0.3, 8.345290831484895e-5)
 
 julia> c = cosmology(w0=-0.9, OmegaK=-0.1)
-ClosedWCDM(0.69,-0.1,0.8099122024007929,0.29,8.779759920715362e-5,-0.9,0.0)
+Cosmology.ClosedWCDM{Float64}(0.7079, -0.1, 0.7999165470916852, 0.3, 8.345290831484895e-5, -0.9, 0.0)
 ```
 
 Distances
@@ -105,13 +105,17 @@ Distances
 ```jlcon
 julia> using Cosmology
 
-julia> C = cosmology(OmegaM=0.3)
-Cosmology.FlatLCDM{Float64}(0.7079, 0.6999165470916852, 0.3, 8.345290831484895e-5)
+julia> C = cosmology(OmegaM=0.27)
+Cosmology.FlatLCDM{Float64}(0.7079, 0.6999165470916852, 0.27, 8.345290831484895e-5)
 
-julia> age(C, 0)
-13.311876832294882 Gyr
+julia> luminosity_dist(C, 1)
+6653.8655390874155 Mpc
 
 julia> angular_diameter_dist_mpc(C, 1)
+1663.4663847718539 Mpc
+
+julia> comoving_radial_dist(C, 1)
+3326.9327695437078 Mpc
 
 ```
 
