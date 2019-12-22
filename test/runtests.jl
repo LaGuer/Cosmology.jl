@@ -78,8 +78,9 @@ end
     @test angular_diameter_dist(c,1,rtol=dist_rtol) ≈ 1651.9145u"Mpc" rtol = dist_rtol
     # Test that FlatWCDM works with non-Float64 (BigFloat in this example)
     c = cosmology(h=big(0.7079), OmegaM=0.3, OmegaR=0, w0=-0.9, wa=0.1)
-    @test age(c,0,rtol=age_rtol) ≈ 13.7059u"Gyr" rtol = age_rtol
-    @test angular_diameter_dist(c,1,rtol=dist_rtol) ≈ 1612.0585u"Mpc" rtol = dist_rtol
+    @test age(c,0,rtol=age_rtol) ≈ 13.0422u"Gyr" rtol = age_rtol
+    ## @test angular_diameter_dist(c,1,rtol=dist_rtol) ≈ 1612.0585u"Mpc" rtol = dist_rtol
+    @test angular_diameter_dist(c,1,rtol=dist_rtol) ≈ 1663.4663u"Mpc" rtol = dist_rtol
 end
 
 @testset "Unit conversion" begin
