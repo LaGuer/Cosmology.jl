@@ -132,11 +132,14 @@ Times
 ```jlcon
 julia> using Cosmology
 
-julia> c = cosmology(OmegaM=0.26)
-FlatLCDM(0.69,0.7399122024007928,0.26,8.779759920715362e-5)
+julia> C = cosmology(OmegaM=0.27)
+Cosmology.FlatLCDM{Float64}(0.7079, 0.7299165470916852, 0.27, 8.345290831484895e-5)
 
-julia> age_gyr(c, 1.2)
-5.445600787626434
+julia> age(C, 0)
+13.705983172937254 Gyr
+
+julia> age(C, 1)
+5.952350017688919 Gyr
 ```
 
 Cite
