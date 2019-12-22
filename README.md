@@ -105,11 +105,14 @@ Distances
 ```jlcon
 julia> using Cosmology
 
-julia> c = cosmology(OmegaM=0.26)
-FlatLCDM(0.69,0.7399122024007928,0.26,8.779759920715362e-5)
+julia> C = cosmology(OmegaM=0.3)
+Cosmology.FlatLCDM{Float64}(0.7079, 0.6999165470916852, 0.3, 8.345290831484895e-5)
 
-julia> angular_diameter_dist_mpc(c, 1.2)
-1784.0089227105118
+julia> age(C, 0)
+13.311876832294882 Gyr
+
+julia> angular_diameter_dist_mpc(C, 1)
+
 ```
 
 Times
